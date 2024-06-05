@@ -1,0 +1,505 @@
+   section.tab-top {
+       padding-top: 0 !important;
+   }
+
+   section.banner {
+       background: url('../../assets/images/index/banner.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+
+   section.banner .row {
+       align-items: center;
+   }
+
+   section.banner .image img {
+       width: 100%;
+   }
+
+   section.selling-card {
+       background-color: #20201F;
+       text-align: center;
+   }
+
+   section.selling-card ._card {
+       text-align: center;
+       padding: 35px;
+       background: #50B0D2;
+       border-radius: 10px;
+       height: 100%;
+   }
+
+   section.selling-card ._card svg {
+       margin-bottom: 20px;
+   }
+
+   section.product-content .custom-row {
+       display: flex;
+   }
+
+   section.product-content img {
+       width: 100%;
+   }
+
+   section.product-content .content {
+       display: flex;
+       flex-direction: column;
+   }
+
+   section.product-content ._card {
+       padding: 50px 40px;
+       border-radius: 20px;
+       background: #20201F;
+       color: #fff;
+   }
+
+   section.product-content ._card h3,
+   section.product-content ._card h4 {
+       margin-bottom: 18px;
+   }
+
+   section.product-content.youtube .text-center {
+       max-width: 851px;
+   }
+
+   section.product-content ._card ul {
+       margin-bottom: 25px;
+   }
+
+   section.product-content ._card li {
+       line-height: 25px;
+   }
+
+   section.product-content .youtube-iframe {
+       cursor: pointer;
+   }
+
+   section.product-content .youtube-iframe img {
+       border-radius: 20px;
+   }
+
+   section.youtube .video {
+       position: relative;
+       padding-top: 54%;
+   }
+
+   section.youtube iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+   }
+
+   section.index-about {
+       background: #20201F;
+       color: #fff;
+   }
+
+   section.index-about .row {
+       align-items: center;
+   }
+
+   section.index-blog .header_content a {
+       text-transform: uppercase;
+       color: #20201F;
+       transition: .5s;
+   }
+
+   section.index-blog .header_content a:hover {
+       color: #9E89A9;
+   }
+
+   section.index-blog .header_content a:hover svg path {
+       fill: #9E89A9;
+   }
+
+   section.index-blog .blog_card {
+       padding: 30px;
+       border-radius: 10px;
+   }
+
+   section.index-blog .blog_card:hover::before {
+       background: url('../../assets/images/index/After.png');
+   }
+
+   section.index-blog .blog_card::before {
+       content: "";
+       background: url('../../assets/images/index/Before.png');
+       z-index: 1;
+       transition: .5s ease;
+   }
+
+   section.index-blog .blog_card p:not(:last-of-type) {
+       margin-bottom: 10px;
+   }
+
+   section.index-blog .blog_card p:last-of-type {
+       margin-bottom: 17px;
+       display: -webkit-box;
+       -webkit-box-orient: vertical;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       -webkit-line-clamp: 3;
+   }
+
+   section.index-blog img {
+       z-index: -1;
+       object-fit: cover;
+   }
+
+   section.index-blog .blog_card::before,
+   section.index-blog img {
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       position: absolute;
+       border-radius: 10px;
+   }
+
+   section.index-blog .blog_card .content a {
+       text-decoration: none;
+       color: #fff;
+   }
+
+   section.index-blog .header_content a svg,
+   section.index-blog .blog_card .content a svg {
+       margin-left: 10px;
+       transition: .5s;
+   }
+
+   section.index-blog .blog_card .content a,
+   section.index-blog .blog_card .content a svg {
+       transition: .5s;
+   }
+
+   section.index-blog .blog_card:hover .content a svg {
+       margin-left: 20px;
+   }
+
+   section.index-blog .blog_card:hover .content a svg path {
+       fill: #50B0D2;
+   }
+
+   section.index-blog .blog_card:hover .content a {
+       color: #50B0D2;
+   }
+
+   section.index-contact .detail .d-flex {
+       gap: 15px;
+       color: #20201F;
+   }
+
+   section.index-contact .detail .d-flex a {
+       color: #20201F;
+       text-decoration: none;
+   }
+
+   section.index-contact .user_review {
+       border-radius: 20px;
+       background: #EBFAFF url('../../assets/images/index/quote.png');
+       background-repeat: no-repeat;
+       background-position: center;
+       padding: 25px 30px;
+   }
+
+   section.index-contact .contact-form {
+       border-radius: 20px;
+       background: #20201F;
+       padding: 50px 45px;
+       color: #fff;
+   }
+
+   section.index-contact .contact-form input,
+   section.index-contact .contact-form textarea {
+       width: 100%;
+       padding: 15px 20px;
+       border-radius: 15px;
+       background: #FFF;
+       border: none;
+   }
+
+   section.index-contact .contact-form textarea {
+       max-height: 150px;
+   }
+
+   section.index-contact .contact-form input.submit_button {
+       border-radius: 30px !important;
+       background: linear-gradient(90deg, #A700FF -15.91%, #0FC1FF 121.87%);
+       color: #fff;
+       font-weight: 700;
+       line-height: 11px;
+       text-transform: uppercase;
+       font-size: 18px;
+   }
+
+   section.index-contact .contact-form input.submit_button:hover {
+       padding: 13px 23px;
+       background: transparent;
+       border: 2px solid;
+       color: #fff;
+   }
+
+   section.index-contact .contact-form .details p {
+       margin-bottom: 30px;
+   }
+
+   section.index-contact .contact-form .col-12:not(:last-of-type) p {
+       margin-bottom: 20px;
+   }
+
+   section.index-contact .contact-form .col-12:last-of-type p {
+       margin-bottom: 0;
+       max-height: 55px;
+   }
+
+   section.index-testimonial .header_content a {
+       text-transform: uppercase;
+       color: #20201F;
+       transition: .5s;
+   }
+
+   section.index-testimonial .header_content a:hover {
+       color: #9E89A9;
+   }
+
+   section.index-testimonial .header_content a:hover svg path {
+       fill: #9E89A9;
+   }
+
+   section.index-testimonial .header_content a svg {
+       margin-left: 10px;
+       transition: .5s;
+   }
+
+   section.index-testimonial img {
+       border-radius: 10px;
+   }
+
+   section.index-testimonial ._card {
+       cursor: pointer;
+   }
+
+   section.index-testimonial ._card p.date {
+       margin-bottom: 10px;
+   }
+
+   section.index-testimonial ._card .content {
+       padding: 30px;
+   }
+
+   @media (min-width:1367px) {
+       section.index-about {
+           min-height: 950px;
+       }
+   }
+
+   @media (min-width:1200px) {
+       section.product-content .custom-row {
+           gap: 40px;
+       }
+
+       section.product-content .content {
+           gap: 60px;
+       }
+
+       section.product-content .cta {
+           margin-top: 60px;
+       }
+
+       section.index-blog .header_content {
+           justify-content: space-between;
+           margin-bottom: 60px;
+       }
+
+       section.selling-card ._card h3 {
+           min-height: 72px;
+       }
+   }
+
+   @media (min-width:992px) {
+       section.banner .content {
+           max-width: 857px;
+           margin: auto 0 auto auto;
+       }
+
+       section.index-testimonial .header_content,
+       section.selling-card h2 {
+           margin-bottom: 60px;
+       }
+
+       section.product-content .header_content {
+           max-width: 850px;
+           margin: auto auto 60px;
+       }
+
+       section.product-content .custom-row .custom-col-6 {
+           max-width: 728px;
+           width: 50%;
+       }
+
+       section.product-content .custom-row .custom-col-3 {
+           max-width: 387px;
+           width: 25%;
+       }
+
+       section.product-content .custom-row {
+           align-items: center;
+       }
+
+       section.index-about {
+           position: relative;
+           height: 100%;
+           padding-top: 0;
+           padding-bottom: 0;
+           display: flex;
+           align-items: center;
+       }
+
+       section.index-about img.desk_top {
+           position: absolute;
+           right: 0;
+           height: 100%;
+           width: 48%;
+           object-fit: cover;
+       }
+
+       section.index-blog .blog_card {
+           min-height: 545px;
+       }
+
+       section.index-contact .detail {
+           gap: 60px;
+           max-width: 713px;
+       }
+
+       section.index-testimonial .header_content h2 {
+           max-width: 520px;
+       }
+   }
+
+   @media (max-width:1366px) {
+       section.index-about {
+           min-height: 700px;
+       }
+   }
+
+   @media (max-width:1199px) {
+       section.selling-card .row {
+           gap: 30px 0;
+       }
+
+       section.product-content .custom-row {
+           gap: 20px;
+       }
+
+       section.product-content .content {
+           gap: 30px;
+       }
+
+       section.selling-card h2 {
+           margin-bottom: 50px;
+       }
+
+       section.product-content .cta {
+           margin-top: 50px;
+       }
+
+       section.index-blog .row {
+           gap: 30px 0;
+       }
+
+       section.index-blog .header_content {
+           flex-direction: column;
+           justify-content: center;
+           gap: 20px;
+       }
+
+       section.index-testimonial .svg img {
+           width: 60px;
+       }
+   }
+
+   @media (max-width:991px) {
+       section.banner {
+           text-align: center;
+       }
+
+       section.banner .image img {
+           margin: auto auto 30px;
+           display: block;
+           max-width: 500px;
+       }
+
+       section.banner .cta_global {
+           margin: auto;
+       }
+
+       section.product-content .header_content {
+           max-width: 850px;
+           margin: auto auto 50px;
+       }
+
+       section.product-content .row {
+           gap: 30px;
+       }
+
+       section.index-about img.mobile {
+           margin-bottom: 30px;
+           border-radius: 20px;
+       }
+
+       section.index-blog .blog_card {
+           min-height: 450px;
+       }
+
+       section.index-contact .detail {
+           gap: 40px;
+       }
+
+       section.index-contact .row.align-items-center {
+           gap: 60px;
+       }
+
+       section.index-testimonial .row {
+           gap: 30px 0;
+       }
+   }
+
+   @media (max-width:767px) {
+       section.selling-card ._card {
+           padding: 20px;
+       }
+
+       section.selling-card h2 {
+           margin-bottom: 40px;
+       }
+
+       section.product-content .cta {
+           margin-top: 40px;
+       }
+
+       section.selling-card br {
+           display: none;
+       }
+
+       section.product-content .custom-row {
+           flex-direction: column;
+           text-align: center;
+       }
+
+       section.index-about {
+           text-align: center;
+       }
+
+       section.index-about .cta_global {
+           margin: auto;
+       }
+
+       section.index-contact .contact-form {
+           padding: 35px 30px;
+       }
+   }
+
+   @media (max-width:575px) {}
