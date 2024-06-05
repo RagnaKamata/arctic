@@ -1,5 +1,6 @@
 <?php wp_footer(); ?>
 
+
 <footer>
     <div class="container-fluid">
         <div class="wrapper">
