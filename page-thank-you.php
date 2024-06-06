@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<section class="thank_you_page l-_hpx">
+<section class="redirection l-_hpx">
     <div class="container-fluid">
         <div class="wrapper">
-            <div class="header_content text-center">
-                <h1 class="header_text">Thank You</h1>
+            <div class="_content">
+                <h1>Thank You</h1>
                 <p>Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                     aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
                     inceptos himenaeos.</p>
