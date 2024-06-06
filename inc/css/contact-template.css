@@ -1,0 +1,91 @@
+section.ctf .detail .d-flex {
+    gap: 15px;
+    color: #20201F;
+}
+
+section.ctf .detail .d-flex a {
+    color: #20201F;
+    text-decoration: none;
+}
+
+section.ctf .user_review {
+    border-radius: 20px;
+    background: #EBFAFF url('../../assets/images/index/quote.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px 30px;
+}
+
+section.ctf .contact-form {
+    border-radius: 20px;
+    background: #20201F;
+    padding: 50px 45px;
+    color: #fff;
+}
+
+section.ctf .contact-form input,
+section.ctf .contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: #FFF;
+    border: none;
+}
+
+section.ctf .contact-form textarea {
+    max-height: 150px;
+}
+
+section.ctf .contact-form input.submit_button {
+    border-radius: 30px !important;
+    background: linear-gradient(90deg, #A700FF -15.91%, #0FC1FF 121.87%);
+    color: #fff;
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+section.ctf .contact-form input.submit_button:hover {
+    padding: 13px 23px;
+    background: transparent;
+    border: 2px solid;
+    color: #fff;
+}
+
+section.ctf .contact-form .details p {
+    margin-bottom: 30px;
+}
+
+section.ctf .contact-form .col-12:not(:last-of-type) p {
+    margin-bottom: 20px;
+}
+
+section.ctf .contact-form .col-12:last-of-type p {
+    margin-bottom: 0;
+    max-height: 55px;
+}
+
+@media (min-width:992px) {
+
+    section.ctf .detail {
+        gap: 60px;
+        max-width: 713px;
+    }
+}
+
+@media (max-width:991px) {
+    section.ctf .detail {
+        gap: 40px;
+    }
+
+    section.ctf .row.align-items-center {
+        gap: 60px;
+    }
+}
+
+@media (max-width:767px) {
+    section.ctf .contact-form {
+        padding: 35px 30px;
+    }
+}

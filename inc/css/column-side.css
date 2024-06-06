@@ -1,5 +1,7 @@
 section.cls {
-    background: #20201F;
+    background: url('../../assets/images/cls-template.jpg'), #20201F;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
@@ -22,6 +24,7 @@ section.cls {
         align-items: center;
     }
 
+    section.cls video.desk_top,
     section.cls img.desk_top {
         position: absolute;
         right: 0;
@@ -37,6 +40,11 @@ section.cls {
 
 
 @media (max-width:991px) {
+    section.cls video.mobile {
+        width: 100%;
+    }
+
+    section.cls video.mobile,
     section.cls img.mobile {
         margin-bottom: 30px;
         border-radius: 20px;
