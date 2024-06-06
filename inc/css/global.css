@@ -122,6 +122,7 @@ footer p:hover svg path,
 footer a:hover svg path,
 header a:hover svg path {
     fill: #50B0D2;
+    transition: fill 0.5s ease;
 }
 
 header .header_list .icons_button ul {

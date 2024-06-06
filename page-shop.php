@@ -1,6 +1,7 @@
 <?php /*Template Name: Shop */
 get_header(); ?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/column-side.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/card.css">
 
 <section class="cls l-_hpx">
     <video autoplay loop muted class="desk_top">
@@ -47,21 +48,21 @@ get_header(); ?>
 
             // The Loop
             if ($loop->have_posts()): ?>
-                <div class="row">
+                <div class="row main_card main_products">
                     <?php while ($loop->have_posts()):
                         $loop->the_post();
                         global $product; ?>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-12">
-                            <div class="_cards">
+                            <div class="_cards product">
                                 <div class="image">
                                     <img src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>"
                                         alt="<?php the_title(); ?>">
                                 </div>
                                 <div class="contents">
-                                    <p class="price"><?php echo $product->get_price_html(); ?></p>
+                                    <p class="price header_text h-4 fw-bold"><?php echo $product->get_price_html(); ?></p>
                                     <h4 class="title"><?php the_title(); ?></h4>
-                                    <p class="description"><?php the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="redirection h-4 fw-bold text-uppercase text-decoration-none">
+                                    <div class="description m-0"><?php the_content(); ?></div>
+                                    <a href="<?php the_permalink(); ?>" class="redirection d-flex align-items-center text-black h-4 fw-bold text-uppercase text-decoration-none">
                                         View Product
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25"
                                             fill="none">
