@@ -1,5 +1,3 @@
-<?php /*Template Name: Shop */
-get_header(); ?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/column-side.css">
 
 <section class="cls l-_hpx">
@@ -23,5 +21,3 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
-<?php get_footer(); ?>

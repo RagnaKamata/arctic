@@ -8,10 +8,8 @@ section.cls .row {
 }
 
 
-@media (min-width:1367px) {
-    section.cls {
-        min-height: 950px;
-    }
+section.cls {
+    min-height: 650px;
 }
 
 @media (min-width:992px) {
@@ -32,13 +30,11 @@ section.cls .row {
         object-fit: cover;
     }
 
-}
-
-@media (max-width:1366px) {
-    section.cls {
-        min-height: 700px;
+    section.cls .content {
+        max-width: 712px;
     }
 }
+
 
 @media (max-width:991px) {
     section.cls img.mobile {
