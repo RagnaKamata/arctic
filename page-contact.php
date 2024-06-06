@@ -35,7 +35,7 @@ get_header(); ?>
                 <div class="col-lg-6 col-12">
                     <div class="contact-form">
                         <div class="details">
-                            <h3>Lorem ipsum dolor sit amet consectetur. Ultrices arcu ac quis egestas vehicula eu </h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur. Ultrices arcu ac quis egestas vehicula eu </h4>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultrices arcu ac quis egestas vehicula eu
                                 maecenas. Lectus orci sit varius nam mauris semper. Euismod scelerisque sit fermentum at
                                 donec.</p>
