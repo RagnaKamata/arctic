@@ -74,6 +74,98 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<section class="ice-plunge-benefits l-_hpx">
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="header_content text-center">
+                <h2 class="header_text">physical benefits of ice plunge</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Cras mi enim a fermentum tellus et tristique id. Quam
+                    vulputate tellus sed sapien scelerisque mauris orci at. Suspendisse amet dui senectus est. Diam
+                    sapien sed.</p>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class=" benefit_card d-flex align-items-end text-white position-relative">
+                        <div class="image"> <img
+                                src="<?php echo $asset_path; ?>/assets/images/benefits/benefit-card-image.jpg"
+                                class="w-100 h-100" alt=""> </div>
+                        <div class="content position-relative z-2">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Tristique urna dictumst amet tristique quam.
+                                Accumsan ornare sed enim quis quam tristique. Nulla arcu elit vivamus sed nisi tortor
+                                donec amet. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="cls l-_hpx">
     <div class="container-fluid">
         <div class="wrapper">

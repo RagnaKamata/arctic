@@ -43,6 +43,34 @@ section.product-content .youtube-iframe img {
 	border-radius: 20px;
 }
 
+section.ice-plunge-benefits .benefit_card {
+	padding: 30px;
+	border-radius: 10px;
+}
+
+section.ice-plunge-benefits .benefit_card::before,
+section.ice-plunge-benefits img {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+section.ice-plunge-benefits .benefit_card::before {
+	content: "";
+	background: url(../../assets/images/index/Before.png);
+	z-index: 1;
+	transition: 0.5s ease;
+}
+
+section.ice-plunge-benefits .col-xl-4.col-lg-6.col-md-6.col-12 {
+	padding-top: calc(var(--bs-gutter-x) * 0.5);
+	padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
 @media (min-width: 1200px) {
 	section.product-content .custom-row {
 		gap: 100px;
@@ -58,7 +86,8 @@ section.product-content .youtube-iframe img {
 }
 
 @media (min-width: 992px) {
-	section.product-content .header_content {
+	section.product-content .header_content,
+	section.ice-plunge-benefits .header_content {
 		max-width: 850px;
 		margin: auto auto 40px;
 	}
@@ -75,6 +104,10 @@ section.product-content .youtube-iframe img {
 
 	section.product-content .custom-row {
 		align-items: center;
+	}
+
+	section.ice-plunge-benefits .benefit_card {
+		min-height: 400px;
 	}
 }
 
@@ -97,7 +130,8 @@ section.product-content .youtube-iframe img {
 }
 
 @media (max-width: 991px) {
-	section.product-content .header_content {
+	section.product-content .header_content,
+	section.ice-plunge-benefits .header_content {
 		max-width: 850px;
 		margin: auto auto 30px;
 	}
