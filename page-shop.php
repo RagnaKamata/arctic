@@ -1,7 +1,8 @@
 <?php /*Template Name: Shop */
 get_header(); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/column-side.css">
 
-<section class="index-about l-_hpx">
+<section class="cls l-_hpx">
     <img src="<?php echo $asset_path; ?>/assets/images/index/about-us.jpg"
         alt="Innovating Wellness Through Cold Therapy" class="desk_top">
     <div class="container-fluid">
