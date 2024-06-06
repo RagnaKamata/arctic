@@ -62,7 +62,8 @@ get_header(); ?>
                                     <p class="price header_text h-4 fw-bold"><?php echo $product->get_price_html(); ?></p>
                                     <h4 class="title"><?php the_title(); ?></h4>
                                     <div class="description m-0"><?php the_content(); ?></div>
-                                    <a href="<?php the_permalink(); ?>" class="redirection d-flex align-items-center text-black h-4 fw-bold text-uppercase text-decoration-none">
+                                    <a href="<?php the_permalink(); ?>"
+                                        class="redirection d-flex align-items-center text-black h-4 fw-bold text-uppercase text-decoration-none">
                                         View Product
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25"
                                             fill="none">
