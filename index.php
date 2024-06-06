@@ -12,7 +12,8 @@
                 <div class="col-lg-7 col-12">
                     <div class="content">
                         <h1 class="header_text">Embrace the Chill with the Arctic Ice Bath Tub</h1>
-                        <p>Revitalize your body and mind with our cold plunge tub, which delivers unparalleled cooling
+                        <p class="black-text">Revitalize your body and mind with our cold plunge tub, which delivers
+                            unparalleled cooling
                             therapy. Whether you're an athlete looking to enhance recovery or simply seeking a unique,
                             relaxing way, the Arctic Ice Bath Tub is your gateway to rejuvenation.</p>
 
@@ -159,7 +160,8 @@
         <div class="wrapper">
             <div class="header_content text-center">
                 <h2 class="header_text">Plunge into the Ultimate Chill with Our Arctic Ice Bath Tub</h2>
-                <p>Learn about the Arctic Ice Bath Tub's features, benefits, dimensions, materials, assembly
+                <p class="black-text">Learn about the Arctic Ice Bath Tub's features, benefits, dimensions, materials,
+                    assembly
                     instructions, maintenance tips, and more. Discover the ultimate cold therapy experience!</p> <img
                     src="<?php echo $asset_path; ?>/assets/images/index/file-1.png"
                     alt="Plunge into the Ultimate Chill with Our Arctic Ice Bath Tub" class="mobile">
@@ -168,13 +170,15 @@
                 <div class="custom-col-3">
                     <div class="content">
                         <div class="sub_content">
-                            <h3>Easy Set-Up</h3>
-                            <p class="m-0">Our plunge tubs cater to user convenience with easy-to-follow assembly
+                            <h3 class="black-text">Easy Set-Up</h3>
+                            <p class="m-0 black-text">Our plunge tubs cater to user convenience with easy-to-follow
+                                assembly
                                 instructions that enable you to set up your tub swiftly and smoothly.</p>
                         </div>
                         <div class="sub_content">
-                            <h3>No Ice Required</h3>
-                            <p class="m-0">With Arctic's innovative cooling technology, you can experience optimal
+                            <h3 class="black-text">No Ice Required</h3>
+                            <p class="m-0 black-text">With Arctic's innovative cooling technology, you can experience
+                                optimal
                                 temperatures by simply adjusting them through our app. </p>
                         </div>
                     </div>
@@ -186,13 +190,15 @@
                 <div class="custom-col-3">
                     <div class="content">
                         <div class="sub_content">
-                            <h3>Built to Last</h3>
-                            <p class="m-0">Made from premium materials, Arctic plunge tubs are designed with a
+                            <h3 class="black-text">Built to Last</h3>
+                            <p class="m-0 black-text">Made from premium materials, Arctic plunge tubs are designed with
+                                a
                                 dual-layer construction that boosts their strength and durability. </p>
                         </div>
                         <div class="sub_content">
-                            <h3>Portable Convenience</h3>
-                            <p class="m-0">Our Ice Bathtub’s compact design ensures it doesn't take up too much space,
+                            <h3 class="black-text">Portable Convenience</h3>
+                            <p class="m-0 black-text">Our Ice Bathtub’s compact design ensures it doesn't take up too
+                                much space,
                                 making it perfect for home. </p>
                         </div>
                     </div>
@@ -210,7 +216,8 @@
         <div class="wrapper">
             <div class="header_content text-center">
                 <h2 class="header_text">Forem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Lorem</h2>
-                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                <p class="black-text">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+                    velit interdum, ac
                     aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
                     inceptos himenaeos.</p>
             </div>
@@ -452,7 +459,7 @@
                     <div class="detail d-flex flex-column ">
                         <div class="contact-header">
                             <h2 class="header_text">Reach Out Today for Expert Guidance and Assistance!</h2>
-                            <p>Connect with us to learn more about our products, cryotherapy, or any
+                            <p class="black-text">Connect with us to learn more about our products, cryotherapy, or any
                                 inquiries you may have. We're here to assist you!</p>
                             <div class="contact-details">
                                 <p class="d-flex  align-items-center m-0"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -485,10 +492,11 @@
                         </div>
 
                         <div class="user_review">
-                            <p class="d-flex align-items-center"> <img
+                            <p class="d-flex align-items-center black-text"> <img
                                     src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
                                     class="m-0">5.0</span> </p>
-                            <p>“Siyempre nung una hindi ako sanay sa ganun kalamig na temperature pero eventually nung
+                            <p class="black-text">“Siyempre nung una hindi ako sanay sa ganun kalamig na temperature
+                                pero eventually nung
                                 nag pass na yung first few seconds niya nakaadapt yung katawan. After, sobrang sarap sa
                                 pakiramdam na may natapos ka na ganun and kung itrtry ko siya ulit kasi parang maganda
                                 siya for recovery lalo na after nag workout or intense na game sa sport na linlaro mo.”
@@ -496,7 +504,7 @@
                             <div class="d-flex  align-items-center">
                                 <img src="<?php echo $asset_path; ?>/assets/images/index/ellipse.svg"
                                     alt="Peter Navarro">
-                                <p class="fw-bold h-4 m-0">Peter Navarro</p>
+                                <p class="black-text fw-bold h-4 m-0">Peter Navarro</p>
                             </div>
                         </div>
                     </div>
