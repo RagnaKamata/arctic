@@ -1,5 +1,6 @@
 <?php /*Template Name: 404 */
 get_header(); ?>
+
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/redirection.css">
 
 <section class="redirection l-_hpx">
