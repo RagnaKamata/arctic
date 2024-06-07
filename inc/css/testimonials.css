@@ -1,3 +1,9 @@
+section.testimonials-v {
+	background: #ebfaff url("../../assets/images/testimonials-v.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 section.testimonials-v .header_content a {
 	text-transform: uppercase;
 	color: #20201f;
@@ -33,6 +39,56 @@ section.testimonials-v ._card .content {
 	padding: 30px;
 }
 
+section.testimonials-t .user_review {
+	border-radius: 20px;
+	background: #ebfaff url("../../assets/images/index/quote.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 25px 30px;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 80px;
+	gap: 20px;
+}
+
+section.testimonials-t .user_review p {
+	margin-bottom: 0;
+}
+
+section.testimonials-t ._card {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+section.testimonials-t .image-container img {
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+section.testimonials-t .image-container {
+	align-self: center;
+	margin-top: -110px;
+	height: 160px;
+	width: 160px;
+}
+
+section.testimonials-t .text-con {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-around;
+}
+
+@media (min-width: 1200px) {
+	section.testimonials-t .custom-row {
+		gap: 30px 0;
+	}
+}
+
 @media (min-width: 992px) {
 	section.testimonials-v .header_content {
 		margin-bottom: 60px;
@@ -40,11 +96,20 @@ section.testimonials-v ._card .content {
 	section.testimonials-v .header_content h2 {
 		max-width: 520px;
 	}
+
+	section.testimonials-t .header_content {
+		max-width: 850px;
+		margin: auto auto 60px;
+	}
 }
 
 @media (max-width: 1199px) {
 	section.testimonials-v .svg img {
 		width: 60px;
+	}
+
+	section.testimonials-t .custom-row {
+		gap: 15px 0;
 	}
 }
 
@@ -52,4 +117,20 @@ section.testimonials-v ._card .content {
 	section.testimonials-v .row {
 		gap: 30px 0;
 	}
+
+	section.testimonials-t .header_content {
+		max-width: 850px;
+		margin: auto auto 50px;
+	}
+
+	section.testimonials-t .row {
+		gap: 30px;
+	}
+
+	section.testimonials-t .text-con {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 767px) {
 }

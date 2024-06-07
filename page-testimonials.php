@@ -23,6 +23,123 @@ get_header(); ?>
         </div>
     </div>
 </section>
+<section class="testimonials-t l-_hpx">
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="header_content text-center">
+                <h2 class="header_text">Lorem ipsum dolor sit amet </h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Cras mi enim a fermentum tellus et
+                    tristique id.</p>
+            </div>
+            <div class="row custom-row">
+                <div class="col-lg-4 col-12">
+                    <div class="_card">
+                        <div class="user_review">
+                            <div class="image-container">
+                                <img src="<?php echo $asset_path; ?>/assets/images/testimonials/peter-navarro.jpg"
+                                    alt="Peter Navarro">
+                            </div>
+                            <p> <img src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
+                                    class="m-0">5.0</span> </p>
+                            <div class="text-con">
+                                <p>“Siyempre nung una hindi ako sanay sa ganun kalamig na temperature
+                                    pero eventually nung nag pass na yung first few seconds niya nakaadapt yung katawan.
+                                    After, sobrang sarap sa pakiramdam na may natapos ka na ganun and kung itrtry ko
+                                    siya
+                                    ulit kasi parang maganda siya for recovery lalo na after nag workout or intense na
+                                    game
+                                    sa sport na linlaro mo.”</p>
+                            </div>
+                            <p class="fw-bold h-4 m-0">Peter Navarro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="_card">
+                        <div class="user_review">
+                            <div class="image-container">
+                                <img src="<?php echo $asset_path; ?>/assets/images/testimonials/jamell-buan.jpg"
+                                    alt="Jamell Buan">
+                            </div>
+                            <p> <img src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
+                                    class="m-0">5.0</span> </p>
+                            <div class="text-con">
+                                <p>“First medyo may gulat factor yung tubig pero once na-submerge na
+                                    yung
+                                    half and yung shoulders medyo okay na medyo nagpapakalma na yung water for me.</p>
+                                <p>Looking forward to do this again especially na meron kaming
+                                    training
+                                    and maganda siya for recovery for us.”</p>
+                            </div>
+
+                            <p class="fw-bold h-4 m-0">Jamell Buan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="_card">
+                        <div class="user_review">
+                            <div class="image-container">
+                                <img src="<?php echo $asset_path; ?>/assets/images/testimonials/kevin-alcantara.jpg"
+                                    alt="Kevin Alcantara">
+                            </div>
+                            <p> <img src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
+                                    class="m-0">5.0</span> </p>
+                            <div class="text-con">
+                                <p>“Ang lamig. Matagal ko gusto siyang itry kasi nga I’m also an
+                                    athlete.
+                                    I play football. Yung katawan ko bugbog na din sa training and madami rin na
+                                    nagsasabi
+                                    na madami siyang benefits kaya ginawa ko siya.</p>
+                                <p>I will definitely try it again and do it again with Artic na rin.”
+                                </p>
+                            </div>
+                            <p class="fw-bold h-4 m-0">Kevin Alcantara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="_card">
+                        <div class="user_review">
+                            <div class="image-container">
+                                <img src="<?php echo $asset_path; ?>/assets/images/testimonials/zhemin-sanico.jpg"
+                                    alt="Zhemin Sanico">
+                            </div>
+                            <p> <img src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
+                                    class="m-0">5.0</span> </p>
+                            <div class="text-con">
+                                <p>“Sa umpisa parang first time ulit. Tintry ko imanage yung cold. .
+                                    .
+                                    Overall, fulfilling. Mas okay siya two to three times a week para masanay yung
+                                    katawan.
+                                    Masarap naman! ”</p>
+                            </div>
+                            <p class="fw-bold h-4 m-0">Zhemin Sanico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="_card">
+                        <div class="user_review">
+                            <div class="image-container">
+                                <img src="<?php echo $asset_path; ?>/assets/images/testimonials/jethric-see.jpg"
+                                    alt="Jethric See">
+                            </div>
+                            <p> <img src="<?php echo $asset_path; ?>/assets/images/index/star.png" alt=""> <span
+                                    class="m-0">5.0</span> </p>
+                            <div class="text-con">
+                                <p>“At first I was frightened because I’ve never tried it. It was a
+                                    new
+                                    experience. I would do it again.”</p>
+                            </div>
+                            <p class="fw-bold h-4 m-0">Jethric See</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="testimonials-v l-_hpx">
     <div class="container-fluid">
         <div class="wrapper">
