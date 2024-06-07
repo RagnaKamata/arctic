@@ -39,6 +39,12 @@ section.testimonials-v ._card .content {
 	padding: 30px;
 }
 
+section.testimonials-t {
+	background: #ebfaff url("../../assets/images/testimonials-t.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 section.testimonials-t .user_review {
 	border-radius: 20px;
 	background: #ebfaff url("../../assets/images/index/quote.png");
