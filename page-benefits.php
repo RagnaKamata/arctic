@@ -166,7 +166,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<section class="cls l-_hpx">
+<section class="cls l-_hpx video">
     <div class="container-fluid">
         <div class="wrapper">
             <div class="row">
