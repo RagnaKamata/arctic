@@ -61,7 +61,9 @@ get_header(); ?>
                                 <div class="contents">
                                     <p class="price header_text h-4 fw-bold"><?php echo $product->get_price_html(); ?></p>
                                     <h4 class="title"><?php the_title(); ?></h4>
-                                    <div class="description m-0"><?php the_content(); ?></div>
+                                    <div class="description m-0">
+                                        <?php echo apply_filters('woocommerce_short_description', $product->get_short_description()); ?>
+                                    </div>
                                     <a href="<?php the_permalink(); ?>"
                                         class="redirection d-flex align-items-center text-black h-4 fw-bold text-uppercase text-decoration-none">
                                         View Product

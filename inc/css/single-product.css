@@ -1,0 +1,169 @@
+section.single_product th.label label,
+section.single_product .quantity::before,
+.single_variation_wrap .single_variation::before {
+    color: #20201F;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500 !important;
+    line-height: 25px;
+    width: 130px;
+}
+
+
+section.single_product .summary,
+section.single_product .woocommerce-product-gallery {
+    width: 100% !important;
+    max-width: 782px;
+}
+
+section.single_product .h-3,
+.woocommerce-Price-amount {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: black !important;
+}
+
+section.single_product .h-3 {
+    font-size: 30px !important;
+}
+
+section .product_title {
+    margin-bottom: 20px;
+}
+
+section.single_product .product_price,
+section.single_product .woocommerce-variation-price {
+    margin-bottom: 35px;
+}
+
+div.product form.cart .reset_variations {
+    display: none !important;
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product .variations_form span.price {
+    color: white !important;
+    font-size: 1em !important;
+}
+
+.variations_form .woocommerce-Price-amount {
+    font-size: 20px !important;
+}
+
+section.single_product [type=submit] {
+    display: flex !important;
+    padding: 15px 25px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #FFF;
+    border-radius: 30px !important;
+    background: linear-gradient(90deg, #A700FF -15.91%, #0FC1FF 121.87%) !important;
+    text-decoration: none !important;
+    width: 100% !important;
+    border: none !important;
+}
+
+
+section.single_product [type=submit]:hover {
+    color: #334A51 !important;
+    padding: 13px 23px !important;
+    background: transparent !important;
+    border: 2px solid !important;
+}
+
+section.single_product .quantity {
+    display: flex !important;
+    margin: 0 0 60px !important;
+    padding: 0 !important;
+}
+
+section.single_product .quantity::before {
+    content: 'Quantity:';
+    display: flex;
+    align-items: center;
+}
+
+section.single_product .quantity button {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+section.single_product .quantity .qty {
+    width: 50px !important;
+    height: 41px;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: black !important;
+    outline: none !important;
+    background: #F8F8F8;
+    border: none !important;
+}
+
+/* Hide the up and down buttons */
+section.single_product input[type=number]::-webkit-inner-spin-button,
+section.single_product input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.single_product th.label {
+    width: 130px;
+}
+
+section.single_product form.cart .variations {
+    margin-bottom: 30px !important;
+}
+
+section.single_product .woocommerce-variation.single_variation {
+    display: flex;
+}
+
+section.single_product .single_variation_wrap .single_variation::before {
+    content: 'Price';
+}
+
+
+section.single_product table.variations tr {
+    display: flex;
+    align-items: center;
+}
+
+select#sizes-option {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #20201F url('../../assets/images/general/arrow.svg') no-repeat right 20px center;
+    background-size: 12px;
+    padding: 0 20px;
+    color: white;
+    border-radius: 3px;
+    max-width: 312px !important;
+    min-width: 312px !important;
+    height: 49px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+select#sizes-option * {
+    padding: 10px !important;
+    margin: 10px !important;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100px;
+    color: #FFFFFF;
+}

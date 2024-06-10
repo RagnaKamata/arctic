@@ -108,7 +108,8 @@ header ul#menu-arctic a {
 }
 
 footer a,
-header a {
+header a,
+header a svg {
     transition: .5s;
 }
 
@@ -123,6 +124,10 @@ footer a:hover svg path,
 header a:hover svg path {
     fill: #50B0D2;
     transition: fill 0.5s ease;
+}
+
+header a:hover svg {
+    transform: rotate(180deg);
 }
 
 header .header_list .icons_button ul {
