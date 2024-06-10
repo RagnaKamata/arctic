@@ -1,5 +1,5 @@
 section.testimonials-v {
-	background: #ebfaff url("../../assets/images/testimonials-v.jpg");
+	background: #ebfaff url("../../assets/images/testimonials/testimonials-v.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -40,7 +40,7 @@ section.testimonials-v ._card .content {
 }
 
 section.testimonials-t {
-	background: #ebfaff url("../../assets/images/testimonials-t.jpg");
+	background: #ebfaff url("../../assets/images/testimonials/testimonials-t.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
