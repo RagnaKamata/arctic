@@ -34,6 +34,7 @@ if (post_password_required()) {
 $post_id = get_the_ID();
 ?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/single-product.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/accordion.css">
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
@@ -41,9 +42,9 @@ $post_id = get_the_ID();
 	<section class="single_product l-_hpx">
 		<div class="container-fluid">
 			<div class="wrapper">
-				<div class="row">
-					<div class="col-xl-6 col-lg-12">
-						<div class="single_images">
+				<div class="main_ row">
+					<div class="col-lg-6 col-12">
+						<div class="single_images <?php the_field('product_gallery_layout'); ?>">
 							<?php
 							if (function_exists('woocommerce_show_product_images')) {
 								woocommerce_show_product_images();
@@ -52,8 +53,8 @@ $post_id = get_the_ID();
 
 						</div>
 					</div>
-					<div class="col-xl-6 col-lg-12">
-						<div class="summary entry-summary">
+					<div class="col-lg-6 col-12">
+						<div class="summary entry-summary mb-0">
 							<?php
 							if ($post_id == 111) {
 								echo '<h2 class="header_text product_title">' . get_the_title() . '</h2>';
@@ -61,44 +62,56 @@ $post_id = get_the_ID();
 								echo '<h1 class="header_text product_title">' . get_the_title() . '</h1>';
 							}
 							?>
-							<?php if (!wc_review_ratings_enabled()) {
-								return;
-							}
-							$rating_count = $product->get_rating_count();
-							$review_count = $product->get_review_count();
+							<!-- reviews count -->
+
+							<?php
+							$count = $product->get_review_count();
 							$average = $product->get_average_rating();
-							if ($rating_count > 0): ?>
-								<div class="product_reviews d-flex align-items-center">
+
+							if ($count > 0 && wc_review_ratings_enabled()):
+								?>
+								<div class="single_star d-none">
+									<!-- <div class="star-rating" title="<?php echo esc_attr($average); ?>">
+										<span style="width:<?php echo (floatval($average) / 5) * 100; ?>%">
+											<strong class="rating">
+												<?php echo esc_html($average); ?>
+											</strong> out of 5
+										</span>
+									</div> -->
 									<?php
-									for ($i = 1; $i <= 5; $i++): ?>
-										<?php if ($i <= $review_count): ?>
-											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
-												fill="#FFD600">
-												<path
-													d="M10 0.5L12.2451 7.40983H19.5106L13.6327 11.6803L15.8779 18.5902L10 14.3197L4.12215 18.5902L6.36729 11.6803L0.489435 7.40983H7.75486L10 0.5Z" />
-											</svg>
-										<?php else: ?>
-											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
-												fill="#A9A9A9">
-												<path
-													d="M10 0.5L12.2451 7.40983H19.5106L13.6327 11.6803L15.8779 18.5902L10 14.3197L4.12215 18.5902L6.36729 11.6803L0.489435 7.40983H7.75486L10 0.5Z" />
-											</svg>
-										<?php endif; ?>
-									<?php endfor; ?>
-									<div class="review_summary">
-										<span><?php echo number_format($review_count, 1); ?></span>
-									</div>
+									$product_id = $product->get_id();
+									$review_count = get_comments_number($product_id);
+
+									// Calculate total ratings and average again for clarity
+									$reviews = get_comments(
+										array(
+											'post_id' => $product_id,
+											'status' => 'approve',
+											'type' => 'review'
+										)
+									);
+
+									$total_rating = 0;
+									foreach ($reviews as $review) {
+										$rating = intval(get_comment_meta($review->comment_ID, 'rating', true));
+										$total_rating += $rating;
+									}
+
+									if (count($reviews) > 0) {
+										$average = $total_rating / count($reviews);
+									}
+									?>
+									<!-- <p class="m-0"><?php echo number_format($average, 1); ?> ( <?php echo $review_count; ?> Reviews )</p> -->
 								</div>
 							<?php endif; ?>
+
 							<div class="product_price">
 								<?php if ($price_html = $product->get_price_html()): ?>
 									<span class="price h-3"><?php echo $price_html; ?></span>
 								<?php endif; ?>
 							</div>
 							<div class="info">
-								<p>
 									<?php echo apply_filters('woocommerce_short_description', $product->get_short_description()); ?>
-								</p>
 							</div>
 							<?php
 							// Display variation dropdown if variations exist
@@ -146,11 +159,133 @@ $post_id = get_the_ID();
 		</div>
 	</section>
 	<!-- Product Summary -->
+	<!-- Product Details -->
+	<section class="product_details  l-_hpx tab-top">
+		<div class="container-fluid">
+			<div class="wrapper">
+				<div class="accordion faqs_main" id="productAccordion">
+					<div class="accordion-item">
+						<div class="accordion-header" id="productDetailsHeader">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#productDetails" aria-expanded="true" aria-controls="productDetails">
+								Product Details
+							</button>
+						</div>
+						<div id="productDetails" class="accordion-collapse collapse show"
+							aria-labelledby="productDetailsHeader">
+							<div class="accordion-body">
+								<ul>
+									<?php if (have_rows('product_details')):
+										while (have_rows('product_details')):
+											the_row(); ?>
+											<li>
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/general/ice.svg"
+													class="w-100"><?php the_sub_field('list'); ?>
+											</li>
+										<?php endwhile;
+									endif; ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<div class="accordion-header" id="productSpecificationsHeader">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#productSpecifications" aria-expanded="true"
+								aria-controls="productSpecifications">
+								Product Specifications
+							</button>
+						</div>
+						<div id="productSpecifications" class="accordion-collapse collapse show"
+							aria-labelledby="productSpecificationsHeader">
+							<div class="accordion-body">
+								<ul>
+									<?php if (have_rows('product_specifications')):
+										while (have_rows('product_specifications')):
+											the_row(); ?>
+											<li>
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/general/ice.svg"
+													class="w-100"><?php the_sub_field('list'); ?>
+											</li>
+										<?php endwhile;
+									endif; ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<div class="accordion-header" id="shippingDeliveryHeader">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#shippingDelivery" aria-expanded="false"
+								aria-controls="shippingDelivery">
+								Shipping & Delivery
+							</button>
+						</div>
+						<div id="shippingDelivery" class="accordion-collapse collapse"
+							aria-labelledby="shippingDeliveryHeader">
+							<div class="accordion-body">
+								<div class="details">
+									<?php the_field('shipping_&_delivery'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<div class="accordion-header" id="cautionHeader">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#caution" aria-expanded="false" aria-controls="caution">
+								Caution
+							</button>
+						</div>
+						<div id="caution" class="accordion-collapse collapse" aria-labelledby="cautionHeader">
+							<div class="accordion-body">
+								<div class="details">
+									<?php the_field('caution'); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="what-included-box l-_hpx">
+		<div class="container-fluid">
+			<div class="wrapper">
+				<div class="main d-flex">
+					<div class="custom">
+						<h2 class="header_text">what’s included in the box?</h2>
+						<div class="d-flex">
+							<?php if (have_rows('included_box')):
+								while (have_rows('included_box')):
+									the_row(); ?>
+									<div class="c_card">
+										<h4><?php the_sub_field('header_text'); ?></h4>
+										<?php the_sub_field('content'); ?>
+									</div>
+								<?php endwhile;
+							endif; ?>
+						</div>
+					</div>
+					<div class="image">
+						<img src="<?php the_field('included_box_image'); ?>" class="w-100"
+							alt="what’s included in the box?">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Product Details -->
 	<!-- Product Reviews -->
-	<section>
+	<section class="d-none">
 		<div class="container-fluid">
 			<div class="wrapper">
 				<div class="review">
+					<?php comments_template(); ?>
 
 				</div>
 			</div>
@@ -160,4 +295,3 @@ $post_id = get_the_ID();
 </div>
 
 <?php do_action('woocommerce_after_single_product'); ?>
-

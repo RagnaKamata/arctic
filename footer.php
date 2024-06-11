@@ -117,35 +117,6 @@
     </div>
 </footer>
 <?php include ('script-manager.php'); ?>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Get the select element
-    var selectElement = document.getElementById("sizes-option");
-
-    // Get the ul element where we will append the li elements
-    var listContainer = document.getElementById("sizes-list");
-
-    // Create li elements based on options and append them to ul
-    for (var i = 0; i < selectElement.options.length; i++) {
-        var option = selectElement.options[i];
-        var li = document.createElement("li");
-        li.textContent = option.textContent; // Copy the text content of the option to li
-        li.setAttribute("data-value", option.value); // Set data-value attribute to li
-        li.classList.add(option.getAttribute("class")); // Copy classes from option to li
-        listContainer.appendChild(li);
-    }
-
-    // Add event listener to handle click on li elements
-    listContainer.addEventListener("click", function(event) {
-        if (event.target.tagName === "LI") {
-            var selectedValue = event.target.getAttribute("data-value");
-            // Do something with the selected value
-            console.log("Selected value:", selectedValue);
-        }
-    });
-});
-
-</script>
 
 </body>
 

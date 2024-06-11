@@ -1,0 +1,106 @@
+.faqs_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 0;
+}
+
+.faqs_main .accordion-item:first-of-type,
+.faqs_main .accordion-item:nth-of-type(2) {
+    height: auto;
+}
+
+.faqs_main .accordion-item {
+    width: 48%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(32, 32, 31, 0.15);
+    height: min-content;
+}
+
+.accordion-button {
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: black !important;
+    font-size: 25px;
+    border: none;
+}
+
+.accordion-button.collapsed,
+.accordion-collapse {
+    /* border-bottom: 1px solid rgba(32, 32, 31, 0.15) !important; */
+}
+
+.accordion-button:hover:not(.collapsed)::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../../assets/images/general/minus-ac.svg);
+
+}
+
+.accordion-button::after {
+    background-image: url(../../assets/images/general/plus-ac.svg);
+}
+
+.accordion-button:hover::after {
+    background-image: url(../../assets/images/general/minus-hov.svg);
+    transition: .5s;
+}
+
+.accordion-button:hover:not(.collapsed)::after,
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    height: 28px;
+    width: 28px;
+    transform: none;
+    background-size: cover;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0 0 40px;
+}
+
+.accordion-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-body li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.accordion-body li img {
+    max-width: 25px !important;
+    height: 25px;
+}
+
+
+@media (max-width:991px) {
+    .accordion-button {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .faqs_main .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width:575px) {}
